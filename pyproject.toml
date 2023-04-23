@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "djavue"
+version = "0.1.0"
+description = "Um pacote rápido de depêndencias para um projeto com django e vuejs"
+authors = ["Ronald Seabra <git.ronaldseabra@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 120
+string_style = "double"
+exclude = '\.env, .vscode/, build/'
+
+[tool.isort]
+profile = "black"
