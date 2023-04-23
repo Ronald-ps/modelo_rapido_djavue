@@ -20,7 +20,6 @@ isort = "^5.12.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-
 [tool.black]
 line-length = 120
 string_style = "double"
