@@ -1,8 +1,13 @@
 <script setup>
-import { ref } from 'vue'
+import { ref , onMounted} from 'vue'
+import { defaultAPI } from '/src/api/helloWorld'
 
 defineProps({
   msg: String,
+})
+
+onMounted(() => {
+  defaultAPI.helloWorld()
 })
 
 const count = ref(0)

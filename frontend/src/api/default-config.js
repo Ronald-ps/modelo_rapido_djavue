@@ -1,11 +1,13 @@
-import axios from 'axios'
+import axios from 'axios';
+// import { Settings } from '@settings';
 
-const _axios = axios.create({
-    baseURL: 'http://localhost:8999/',
-    xsrfHeaderName: 'X-CSRFToken',
-    xsrfCookieName: 'csrftoken',
-    withCredentials: true,
-    AccessControlAllowCredentials: true,
-})
 
-export default _axios
+axios.defaults.xsrfHeaderName = 'x-csrftoken';
+axios.defaults.xsrfCookieName = 'csrftoken';
+axios.defaults.withCredentials = true;
+axios.defaults.headers.common['Content-Type'] = 'application/json';
+
+export const defaultBackendHttpClient = axios.create({
+  baseURL: `http://localhost:8000/`,
+  timeout: 60000,
+});
