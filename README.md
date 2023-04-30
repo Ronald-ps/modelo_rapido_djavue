@@ -15,3 +15,18 @@ Poetry é um gerenciador de dependências python. Permiti a padronização de am
 Docker é uma tecnologia de criação de containers. Containers são ambientes linux que simulam um ambiente linux no seu computador. Docker é diferente de máquinas virtuais.
 Com docker, é possível ter um mesmo ambiente independente de qual computador ou servidor você estiver usando.
 Recomendo não instalar o poetry, apenas o docker e o docker compose.
+
+
+## Como rodar o projeto
+Ambas as pastas frontend e backend tem descrição de como subir o ambiente.
+No geral, na pasta frontend você deve executar
+```shell
+$ npm i; npm run dev
+```
+e acessar localhost:3000 no navegador.
+
+No backend. Você deve executar:
+```shell
+$ cp .env.example .env
+$ docker compose up --build
+```

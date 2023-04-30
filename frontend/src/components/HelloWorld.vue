@@ -6,7 +6,7 @@ let msg = ref(undefined)
 
 const updateMsg = async () => {
     const response = await defaultAPI.helloWorld()
-    msg.value = response.message
+    msg.value = response.message || 'Hello, My friend'
 }
 
 updateMsg()
