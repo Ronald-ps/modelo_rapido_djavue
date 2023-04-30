@@ -1,4 +1,4 @@
-import { defaultBackendHttpClient } from './default-config'
+import { defaultBackendHttpClient } from './configs/default-config'
 
 const helloWorld = () => {
   defaultBackendHttpClient.get("hello-word").then( response => response.data )

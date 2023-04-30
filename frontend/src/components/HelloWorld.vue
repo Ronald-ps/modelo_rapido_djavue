@@ -1,6 +1,6 @@
 <script setup>
 import { ref , onMounted} from 'vue'
-import { defaultAPI } from '/src/api/helloWorld'
+import { defaultAPI } from '/src/api/default.js'
 
 defineProps({
   msg: String,
