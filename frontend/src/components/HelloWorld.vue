@@ -1,14 +1,17 @@
 <script setup>
-import { ref , onMounted} from 'vue'
+import { ref } from 'vue'
 import { defaultAPI } from '/src/api/default.js'
 
-defineProps({
-  msg: String,
-})
 
-onMounted(() => {
-  defaultAPI.helloWorld()
-})
+let msg = ref(undefined)
+
+const updateMsg = async () => {
+  const response = await defaultAPI.helloWorld()
+  msg.value = response.message
+}
+
+updateMsg()
+
 
 const count = ref(0)
 </script>
