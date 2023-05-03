@@ -28,5 +28,5 @@ modificar o dom com praticidade, além de renderização de conteúdo do lado do
 .prettierrc.json. O eslint aponta erros baseados na configuração do prettier. Na prática, isso evita conflito entre os dois.
 
 ### Axios como ferramenta de requisição
-Para requisições http, a biblioteca axios é usada. O axios é uma ferramenta de requisição amigável,
+Para requisições http, a biblioteca axios é usada. O axios é uma ferramenta de requisição amigável
 e útil para o desenvolvimento rápido.
